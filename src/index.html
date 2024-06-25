@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather and Maps</title>
+    <link rel="stylesheet" href="/styles.css">
+    <script src="https://maps.googleapis.com/maps/api/js?key=API_KEY&libraries=places" async defer></script>
+    <script src="./app.js" defer></script>
+    <script src="./index.js"></script>
+</head>
+<body>
+    <main>
+        <section class="title">
+            <h1 class="web-name">HOW IS YOUR WEATHER</h1>
+            <h3 class="web-description">Busca tu ubicación en Google Maps y podrás ver el clima actual de esta zona.</h3>
+        </section>
+        <input id="location-input" type="text" placeholder="Ingresa tu ubicación">
+        <button id="search-btn">Buscar</button>
+        <div id="weather">
+            <div class=" climate wind">
+                <p>Precipitación</p>
+                <p id="value-one">TBD</p>
+            </div>
+            <div class="climate temperature">
+                <p>Temperatura</p>
+                <p id="value-two">TDB</p>
+            </div>
+            <div class="climate precipitation">
+                <p>Velocidad del viento</p>
+                <p id="value-three">TDB</p>
+            </div>
+        </div>
+        <div id="map"></div>
+    </main>
+</body>
+<footer>
+    <span>Design by Agudelo</span>
+</footer>
+</html>
